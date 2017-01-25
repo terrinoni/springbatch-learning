@@ -14,7 +14,7 @@ target/
 hs_err_pid*
 
 
-## Eclipse-specific ignore
+## Eclipse-specific ignore (include STS)
 *.pydevproject
 .metadata
 .gradle
@@ -25,8 +25,11 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.settings/
 .loadpath
+.apt_generated
+.factorypath
+.settings
+.springBeans
 
 # Eclipse Core
 .project
@@ -51,6 +54,13 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
+
+## IntelliJ IDEA-specific ignore
+.idea
+*.iws
+*.iml
+*.ipr
 
 
 ## NetBeans-specific ignore
@@ -94,28 +104,8 @@ $RECYCLE.BIN/
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 
+
+## Gradle-specific ignore for this project
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
